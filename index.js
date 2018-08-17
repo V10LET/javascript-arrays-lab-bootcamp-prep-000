@@ -3,11 +3,11 @@ function kittens() {
   var kittens = ['Milo', 'Otis', 'Garfield']
 }
 
-function appendKitten(name) {
-    return [...kittens, name]
+function destructivelyAppendKitten(name) {
+    name.slice(kittens)
+    return kittens
 }
 
-function destructivelyAppendKitten(name) {
-    kittens.appendKitten(name)
-    return kittens
+function appendKitten(name) {
+    return [...kittens, name]
 }
