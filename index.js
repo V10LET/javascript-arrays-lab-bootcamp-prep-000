@@ -13,6 +13,10 @@ function destructivelyPrependKitten(name) {
   return kittens
 }
 
+function destructivelyRemoveLastKitten() {
+  kittens.slice(0, kittens.length - 1)
+}
+
 function appendKitten(name) {
   return [...kittens, name]
 }
