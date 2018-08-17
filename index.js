@@ -4,6 +4,6 @@ function kittens() {
 }
 
 function destructivelyAppendKitten(name) {
-    kittens.slice(0, 4, name)
+    kittens.appendKitten(name)
     return kittens
 }
