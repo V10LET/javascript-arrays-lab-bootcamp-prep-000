@@ -4,6 +4,6 @@ function kittens() {
 }
 
 function destructivelyAppendKitten(name) {
-    name.appendKitten()
+    name.splice(0, name.length - 1)
     return name
 }
