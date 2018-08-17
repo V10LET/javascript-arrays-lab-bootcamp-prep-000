@@ -4,10 +4,16 @@ function kittens() {
 }
 
 function destructivelyAppendKitten(name) {
-    kittens.push(name)
-    return kittens
+  kittens.push(name)
+  return kittens
+}
+
+function destructivelyPrependKitten(name) {
+  kittens.unshift(name)
+  return kittens
 }
 
 function appendKitten(name) {
-    return [...kittens, name]
+  return [...kittens, name]
 }
+
